@@ -15,4 +15,10 @@ function wordReverse(word) {
 
 // ---------------------------------- MAIN ------------------------------>^.^<------
 
+const parola = prompt("Inserisci la parola che vuoi controllare").toUpperCase();
 
+if (parola === wordReverse(parola)) {
+    alert(`La parola ${parola} è PALINDROMA`)
+} else {
+    alert(`La parola ${parola} NON è PALINDROMA, è diversa da ${wordReverse(parola)}`)
+}
