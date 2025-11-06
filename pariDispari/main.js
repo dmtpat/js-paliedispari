@@ -31,4 +31,17 @@ function isPari(num) {
 function sum2number(num1, num2) {
     return (num1 + num2);
 }
- 
+/**
+  * Funzione che verifica se il valore è un numero intero e che sia compreso in un range inserito
+  * @param { } valore il dato da verificare 
+  * @param {number} iniziale il primo valore del range
+  * @param {number} finale l'ultimo valore del range
+  * @returns {boolean} se il valore è un numero nel range
+  */
+function isNumberInRange(valore, iniziale, finale) {
+    if (typeof (valore) == `number`) {
+        if (iniziale <= valore && valore <= finale)
+            return true;
+    }
+    return false;
+}
