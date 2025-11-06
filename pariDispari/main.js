@@ -22,3 +22,13 @@ function isPari(num) {
     return false;
 }
 
+/**
+ * Somma di due numeri
+ * @param {number} num1 numero da sommare
+ * @param {number} num2 numero da sommare
+ * @return {number} risultato della somma
+ */
+function sum2number(num1, num2) {
+    return (num1 + num2);
+}
+ 
