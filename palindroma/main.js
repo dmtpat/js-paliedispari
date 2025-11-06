@@ -15,8 +15,12 @@ function wordReverse(word) {
 
 // ---------------------------------- MAIN ------------------------------>^.^<------
 
-const parola = prompt("Inserisci la parola che vuoi controllare").toUpperCase();
+let parola = prompt("Inserisci la parola che vuoi controllare").toUpperCase();
 
+while (parola === ""){
+    parola = prompt("Inserisci UNA PAROLA da controllare").toUpperCase();
+} 
+    
 if (parola === wordReverse(parola)) {
     alert(`La parola "${parola}" è PALINDROMA`)
 } else {
