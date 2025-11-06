@@ -10,3 +10,15 @@ function randomIntegerNumber(min, max) {
     
     return (Math.floor(Math.random() * (max - min + 1)));
 }
+
+/**
+ * Funzione per calcolare se un numero è pari
+ * @param {number} num numero da controllare
+ * @returns {boolean} risultato vero(pari) o falso 
+ */
+function isPari(num) {
+    if (num%2 === 0)
+        return true;
+    return false;
+}
+
